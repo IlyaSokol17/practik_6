@@ -1,15 +1,14 @@
 a = []
-for i in range(0, 201):
-    if i < 10:
+for i in range(0, 10):
         a.append(i)
-    if i >=10 and i <= 99:
+for i in range(10, 100):
         a.append(i//10)
         a.append(i%10)
-    if i>=100:
+for i in range (100, 201):
         a.append(i//100)
         a.append((i%100)//10)
         a.append(i%10)
 
 print(a)
 x = int(input())
-print(a[x])
+print(a[x - 1])
